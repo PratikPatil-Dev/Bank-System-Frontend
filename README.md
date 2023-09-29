@@ -1,34 +1,45 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# EZ-TransX - A Basic Banking System (MERN)
+Welcome to EZ-TransX, a simple yet powerful basic banking system. This project allows you to manage customer accounts, perform transactions, and more. It's perfect for simulating banking operations in a real-world scenario.
 
-## Getting Started
+[Link to Live Demo](https://ez-transx-banking-system.vercel.app/)
 
-First, run the development server:
+## Table of Contents
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-```
+- [Demo](#demo)
+- [Features](#features)
+- [Technologies](#technologies)
+- [Getting Started](#getting-started)
+- [Usage](#usage)
+- [Contributing](#contributing)
+- [License](#license)
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## Demo
 
-You can start editing the page by modifying `app/page.js`. The page auto-updates as you edit the file.
+![EZ-TransX Demo](https://github.com/foxyfoxxx/Bank-System-Frontend/assets/123150727/a9f96953-5689-446e-975b-a014352c19ef)
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+For a live demo, visit [EZ-TransX Video Walkthrough](https://vimeo.com/869548436?share=copy).
 
-## Learn More
+For a step-by-step navigation, visit [EZ-TransX PDF](https://github.com/foxyfoxxx/Bank-System-Frontend/files/12765729/WalkthroughEX-TransX_PDF_2023-09-29123726.521100.pdf).
 
-To learn more about Next.js, take a look at the following resources:
+## Features
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+- **User Management:** Manage customer accounts.
+- **Transaction History:** View transaction records.
+- **Balance Updates:** Track account balances in real-time.
+- **Transaction Simulation:** Simulate transactions between accounts.
+- **Responsive Design:** Works seamlessly on desktop and mobile devices.
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+## Technologies
 
-## Deploy on Vercel
+- **Frontend:** React, Next.js
+- **Backend:** Node.js, Express.js, MongoDB
+- **Database:** MongoDB Atlas
+- **Styling:** Tailwind CSS
+- **Deployment:** Vercel (Frontend), Render (Backend)
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+Thank you for using EZ-TransX! If you have any questions or encounter any issues, please feel free to reach out to me.
+
+**Pratik Patil**
+
+**pratikpatil0884@gmail.com**
