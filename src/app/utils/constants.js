@@ -1,4 +1,4 @@
-export const BASE_API_URL = "http://localhost:3030";
+export const BASE_API_URL = "https://bank-server-qdm1.onrender.com";
 
 export const formatIndianCurrency = (amount) => {
   const formatter = new Intl.NumberFormat("en-IN", {

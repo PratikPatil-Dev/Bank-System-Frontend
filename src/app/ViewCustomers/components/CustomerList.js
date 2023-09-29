@@ -2,7 +2,7 @@ import { useEffect, useState } from "react";
 import { MoonLoader } from "react-spinners";
 import "./CustomerList.css";
 import { useRouter } from "next/navigation";
-import { formatIndianCurrency } from "@/app/utils/constants";
+import { BASE_API_URL, formatIndianCurrency } from "@/app/utils/constants";
 
 function CustomerList() {
   const [allCustomers, setAllCustomers] = useState([]);
@@ -17,7 +17,7 @@ function CustomerList() {
   //* Fetching Data of All users from DB
 
   useEffect(() => {
-    fetch("http://localhost:3030/api/customerDatas")
+    fetch(`${BASE_API_URL}/api/customerDatas`)
       .then((response) => response.json())
       .then((data) => {
         setAllCustomers(data);
