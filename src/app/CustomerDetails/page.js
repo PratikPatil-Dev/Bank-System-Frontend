@@ -4,6 +4,7 @@ import Footer from "../Components/Footer/Footer";
 import Navbar from "../Components/Navbar/Navbar";
 import Cards from "./Components/Cards";
 import axios from "axios";
+import { BASE_API_URL } from "../utils/constants";
 
 const CustomerDetails = () => {
   const [customerData, setCustomerData] = useState(null);
@@ -22,7 +23,7 @@ const CustomerDetails = () => {
       try {
         //* Fetch customer data based on the ID
         const response = await fetch(
-          `http://localhost:3030/api/customerDatas/${customerId}`
+          `${BASE_API_URL}/api/customerDatas/${customerId}`
         );
 
         if (response.ok) {

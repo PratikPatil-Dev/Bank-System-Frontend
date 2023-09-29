@@ -5,7 +5,7 @@ import Navbar from "../Components/Navbar/Navbar";
 import { useEffect, useState } from "react";
 import Image from "next/image";
 import axios from "axios";
-import { formatIndianCurrency, formatTimeStamp } from "../utils/constants";
+import { formatIndianCurrency, formatTimeStamp, BASE_API_URL } from "../utils/constants";
 
 const SuccessPage = () => {
   const [txnId, setTxnId] = useState(null); // set transaction Id from params
@@ -22,7 +22,7 @@ const SuccessPage = () => {
   //* Fetch Transaction details using txn id and store it in state variable
   useEffect(() => {
     const transactionData = axios
-      .get(`http://localhost:3030/api/transactions/${txnId}`)
+      .get(`${BASE_API_URL}/api/transactions/${txnId}`)
       .then((Response) => {
         setTransaction(Response.data);
       });

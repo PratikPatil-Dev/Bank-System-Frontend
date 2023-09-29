@@ -3,6 +3,7 @@ import { useEffect, useState } from "react";
 import Navbar from "../Components/Navbar/Navbar";
 import Footer from "../Components/Footer/Footer";
 import Cards from "./Components/Cards";
+import { BASE_API_URL } from "../utils/constants";
 
 const TransferMoney = () => {
   const [customersData, setCustomersData] = useState(null); // All usrer objects
@@ -22,7 +23,7 @@ const TransferMoney = () => {
 
     //* API call to get all users data
     try {
-      const response = await fetch(`http://localhost:3030/api/customerDatas`);
+      const response = await fetch(`${BASE_API_URL}/api/customerDatas`);
 
       if (response.ok) {
         const data = await response.json();
@@ -38,7 +39,7 @@ const TransferMoney = () => {
     //* API call to get selected senders data
     try {
       const response = await fetch(
-        `http://localhost:3030/api/customerDatas/${customerId}`
+        `${BASE_API_URL}/api/customerDatas/${customerId}`
       );
 
       if (response.ok) {

@@ -2,7 +2,6 @@ import { formatIndianCurrency } from "@/app/utils/constants";
 import { useRouter } from "next/navigation";
 
 const Cards = (props) => {
-
   // Page Router
   let { push } = useRouter();
   const directTo = (path) => {

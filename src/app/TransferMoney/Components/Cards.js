@@ -3,7 +3,7 @@ import { BsArrowDownUp } from "react-icons/bs";
 import { IoIosArrowDropdownCircle } from "react-icons/io";
 import { LiaRupeeSignSolid } from "react-icons/lia";
 import { BiSolidEditAlt } from "react-icons/bi";
-import { formatIndianCurrency } from "@/app/utils/constants";
+import { formatIndianCurrency, BASE_API_URL } from "@/app/utils/constants";
 import toast from "react-hot-toast";
 import { Toaster } from "react-hot-toast";
 import axios from "axios";
@@ -113,7 +113,7 @@ const Cards = (props) => {
   const updateSendersDocument = async () => {
     const response = await axios
       .patch(
-        `http://localhost:3030/api/customerDatas/${senderCustomer?._id}`,
+        `${BASE_API_URL}/api/customerDatas/${senderCustomer?._id}`,
         sendersObject
       )
       .catch((error) => {
@@ -125,7 +125,7 @@ const Cards = (props) => {
   const updateRecieversDocument = async () => {
     const response = await axios
       .patch(
-        `http://localhost:3030/api/customerDatas/${receiverCustomer?._id}`,
+        `${BASE_API_URL}/api/customerDatas/${receiverCustomer?._id}`,
         recieversObject
       )
       .catch((error) => {
@@ -164,7 +164,7 @@ const Cards = (props) => {
   const createTransaction = async () => {
     try {
       const transaction = await axios.post(
-        "http://localhost:3030/api/transactions",
+        `${BASE_API_URL}/api/transactions`,
         transactionObj
       );
     } catch (error) {

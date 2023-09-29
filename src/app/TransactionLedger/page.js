@@ -4,7 +4,7 @@ import Footer from "../Components/Footer/Footer";
 import { IoIosArrowDropdownCircle } from "react-icons/io";
 import { useEffect, useState } from "react";
 import axios from "axios";
-import { formatIndianCurrency, formatTimeStamp } from "../utils/constants";
+import { formatIndianCurrency, formatTimeStamp, BASE_API_URL } from "../utils/constants";
 
 const ViewCustomers = () => {
   const [transactionData, setTransactionData] = useState([]); // Get all transactions from DB
@@ -14,7 +14,7 @@ const ViewCustomers = () => {
 
   //* GET req to fetch all transactions from DB, Sort and storein state
   useEffect(() => {
-    axios.get("http://localhost:3030/api/transactions").then((response) => {
+    axios.get(`${BASE_API_URL}/api/transactions`).then((response) => {
       const sortedData = response.data.sort((a, b) => {
         const senderNameA = a.senderName.toLowerCase();
         const senderNameB = b.senderName.toLowerCase();
