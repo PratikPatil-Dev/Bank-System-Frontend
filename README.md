@@ -15,7 +15,8 @@ Welcome to EZ-TransX, a simple yet powerful basic banking system. This project a
 
 ## Demo
 
-![EZ-TransX Demo](https://github.com/foxyfoxxx/Bank-System-Frontend/assets/123150727/a9f96953-5689-446e-975b-a014352c19ef)
+![bank-mockup](https://github.com/PratikPatil-Dev/Bank-System-Frontend/assets/123150727/3898adcf-56cb-436a-b714-a5eda0c3b341)
+
 
 For a live demo, visit [EZ-TransX Video Walkthrough](https://vimeo.com/869548436?share=copy).
 
